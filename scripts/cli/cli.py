@@ -8,6 +8,8 @@ def cli(soup: BeautifulSoup):
     while True:
         if type=="q":
             return
+        if type=="i":
+            print(inputStr[0])
         if type == "1" or type == "0":
             match type:
                 case "0":
@@ -15,6 +17,8 @@ def cli(soup: BeautifulSoup):
                     while True:
                         if data=="q":
                             return
+                        if data=="i":
+                            print(inputStr[1])
                         if data.isnumeric():
                             if "0" in data:
                                 print(input_1["0"](soup))
@@ -33,6 +37,8 @@ def cli(soup: BeautifulSoup):
                     while True:
                         if data=="q":
                             return
+                        if data=="i":
+                            print(inputStr[2])
                         if data == "0" or data=="1":
                             match data:
                                 case "0":
@@ -40,6 +46,8 @@ def cli(soup: BeautifulSoup):
                                     while True:
                                         if q=="q":
                                             return
+                                        if q=="i":
+                                            print(inputStr[1])
                                         if q.isnumeric():
                                             if "0" in q:
                                                 print(input_2["0"](soup))
@@ -60,6 +68,8 @@ def cli(soup: BeautifulSoup):
                                     while True:
                                         if p=="q":
                                             return
+                                        if p=="i":
+                                            print(inputStr[1])
                                         if p.isnumeric():
                                             if "0" in p:
                                                 print(input_4["0"](soup))
