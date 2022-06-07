@@ -1,7 +1,8 @@
 import string
 from bs4 import BeautifulSoup
-from helpers import removeBracket, cleanList, getWikiData
+from helpers import removeBracket, cleanList
 from constants import regionID
+from mainWikiScrape import getWikiData
 
 def getAllList(soup: BeautifulSoup):
     result = []
