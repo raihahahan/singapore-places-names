@@ -8,13 +8,13 @@ def getWikiData():
         response=requests.get(wikiURL)
         if (response.status_code != 200):
             print("[Error] Web scraping is not allowed in this URL: ", wikiURL)
-            return []
+            return None
         
         return BeautifulSoup(response.text, "html.parser")
     
     except: 
         print("An exception occurred")
-        return []
+        return None
 
 def removeBracket(text: string):
     planningArea=text
