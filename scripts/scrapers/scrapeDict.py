@@ -1,10 +1,10 @@
 import string
 from bs4 import BeautifulSoup, ResultSet
-
-from scrapeList import get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
-from mainWikiScrape import getWikiData
-from helpers import cleanList, removeBracket
-from constants import regionID
+import sys
+sys.path.append("..") 
+from .scrapeList import get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
+from helpers.helpers import cleanList, removeBracket
+from helpers.constants import regionID
 
 def getDictByRegion(soup: BeautifulSoup):
     central = get_central_list(soup)

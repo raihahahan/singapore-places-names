@@ -1,26 +1,12 @@
-from mainWikiScrape import getWikiData
-from scrapeList import getAllList
-from scrapeDict import getDictByRegion, getDictByPlanningArea_ALL
+from scrapers.mainWikiScrape import getWikiData
+from helpers.constants import inputStr
+from helpers.cliHelpers import input_1, input_2, input_3, input_4
+from cli.cli import cli
+from scripts.helpers.cliHelpers import convertNumToList
 
 def main():
     soup=getWikiData()
-    # List
-    resultsList=[]
-    # if soup:
-    #     resultsList=getAllList(soup)
-    # print(resultsList)
-
-    # Dict, indexed by regions
-    resultsDict={}
-    # if soup:
-    #     resultsDict=getDictByRegion(soup)
-    # print(resultsDict)
-
-    # Dict, indexed by regions
-    # Each region indexed by Planning Area
-    if soup:
-        resultsAllDict=getDictByPlanningArea_ALL(soup)
-        print(resultsAllDict)
+    cli(soup)
     
 if __name__ == "__main__":
     main()

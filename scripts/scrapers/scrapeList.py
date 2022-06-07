@@ -1,8 +1,9 @@
+import sys
+sys.path.append("..") # Adds higher directory to python modules path.
 import string
 from bs4 import BeautifulSoup
-from helpers import removeBracket, cleanList
-from constants import regionID
-from mainWikiScrape import getWikiData
+from helpers.helpers import removeBracket, cleanList
+from helpers.constants import regionID
 
 def getAllList(soup: BeautifulSoup):
     result = []
