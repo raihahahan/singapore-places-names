@@ -10,7 +10,7 @@ def getAllList(soup: BeautifulSoup):
     north = get_north_list(soup)
     northEast = get_northEast_list(soup)
     west = get_west_list(soup)
-    result += central + east + north + northEast + west
+    result = central + east + north + northEast + west
     return result
 
 def get_central_list(soup):

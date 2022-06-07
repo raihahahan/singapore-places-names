@@ -1,5 +1,5 @@
 ```
-Last update: 7 June 2022 4.28PM (SGT)
+Last updated: 7 June 2022 4.28PM (SGT)
 
 [
   "Bishan",
