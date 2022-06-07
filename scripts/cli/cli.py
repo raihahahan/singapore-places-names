@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from helpers.constants import inputStr
 from helpers.cliHelpers import input_1, input_2, input_3, input_4
-from scripts.helpers.cliHelpers import convertNumToList
+from helpers.cliHelpers import convertNumToList
 
 def cli(soup: BeautifulSoup):
     type = input(inputStr[0])

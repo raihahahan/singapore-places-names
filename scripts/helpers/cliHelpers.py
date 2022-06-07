@@ -2,7 +2,7 @@ import string
 
 from numpy import number
 from scrapers.scrapeList import getAllList, get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
-from scripts.scrapers.scrapeDict import getDictByPlanningArea_ALL, getDictByPlanningArea_central, getDictByRegion, getDictByRegion_east, getDictByRegion_north, getDictByRegion_northEast, getDictByRegion_west
+from scrapers.scrapeDict import getDictByPlanningArea_ALL, getDictByPlanningArea_central, getDictByRegion, getDictByRegion_east, getDictByRegion_north, getDictByRegion_northEast, getDictByRegion_west
 
 def convertNumToList(num:string, maxNum: number):
     if "0" in num: 
