@@ -1,4 +1,6 @@
 ```
+Last update: 7 June 2022 4.28PM (SGT)
+
 [
   "Bishan",
   "Bishan East",
