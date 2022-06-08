@@ -38,12 +38,12 @@
   <h3 align="center">Singapore Key Places Names</h3> -->
 
   <p align="center">
-    This repo contains the names of key places in Singapore (e.g. Bishan, Bedok, Tampines) in different data structures. You can either view the output text files, or use the command line program shown below.
+    This repo contains the names of key places in Singapore (e.g. Bishan, Bedok, Tampines) in different data structures. You can either view the <a href="https://github.com/raihahahan/singapore-places-names/tree/main/output">preset output text files</a>, or use the command line program shown below.
     <br />
 <!--     <a href="https://github.com/raihahahan/README-Wiki-Test/blob/5266dedebfd1251f7069f614e8bd39a178437c77/Green%20App/Wiki.md"><strong>Wiki »</strong></a>
     <br /> -->
     <br>
-    <a href="https://github.com/raihahahan/singapore-places-names/blob/main/documentation.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/raihahahan/singapore-places-names/blob/main/documentation.md"><strong> Explore the docs »</strong></a>
     <br/>
     <br />
 <!--     <a href="https://github.com/raihahahan/singapore-places-names">View Demo</a>  TODO-->
@@ -51,6 +51,9 @@
     <a href="https://github.com/raihahahan/singapore-places-names/issues">Report Bug</a>
     ·
     <a href="https://github.com/raihahahan/singapore-places-names/issues">Request Feature</a>
+      <br/>
+      <br/>
+    <a href="https://github.com/raihahahan/singapore-places-names/tree/main/output">View preset output text files</a>
   </p>
 </p>
 
