@@ -43,3 +43,31 @@ sg-places-list/
 
 ## Contributing
 See the current issues [here](https://github.com/raihahahan/singapore-places-names/issues). 
+
+## Function reference
+|      Name     |  Description   |
+| -------------  |----------------|
+| `getWikiData()` | Fetches data from the https://en.wikipedia.org/wiki/List_of_places_in_Singapore#cite_note-8. If no error, returns a `BeautifulSoup` object. Else, returns `None`.|
+| `getDictByRegion(soup: BeautifulSoup)`   |Takes in a `BeautifulSoup` object as argument. Returns a `dict` containing all the key places in Singapore, with "east", "northEast", "central", "west", "north" as the keys, and a list of all the places in that region as the values.| 
+| `getDictByPlanningArea_all(soup: BeautifulSoup)` |Takes in a `BeautifulSoup` object as argument. Returns a `dict` containing all the key places in Singapore, with "east", "northEast", "central", "west", "north" as the keys. Each value is a `dict` keyed by the Planning Areas of that region, and each value is the list of places in that Planning Area.|
+| `getAllList(soup: BeautifulSoup)`  |Takes in a `BeautifulSoup` object as argument. Returns a `list` containing all the places in Singapore (which were fetched from the site)|
+
+The scraper functions above each contains their respective helper functions to get the `list`/`dict` by region. See examples below.
+
+## Examples
+```py
+soup = getWikiData()
+
+all_list = getAllList(soup)
+east_list = get_east_list(soup)
+west_list = get_west_list(soup)
+
+all_byRegion_dict = getDictByRegion(soup)
+east_byRegion_dict = getDictByRegion_east(soup)
+west_byRegion_dict = getDictByRegion_west(soup)
+
+all_byPlanningAreaAndRegion_dict = getDictByPlanningArea_all(soup)
+east_byPlanningAreaAndRegion_dict = getDictByPlanningArea_east(soup)
+west_byPlanningAreaAndRegion_dict = getDictByPlanningArea_west(soup)
+
+```
