@@ -24,7 +24,7 @@ sg-places-list/
 - `output/`: preset text output files containing results from the CLI program. This is useful as a quick reference to copy text from.
 - `scripts/`: All the Python scripts for this project.
 - `scripts/cli/`: Python script for the CLI.
-- `scripts/scrapers/scrapeDict.py`: Python scripts for the webscraper. Files in this folder contain the main code for webscraping. Some of the program logic are abstracted into helper functions in `helpers/helpers.py`. These helpers usually handle the logic behind cleaning the data and to structure them as lists/dict.
+- `scripts/scrapers/`: Python scripts for the webscraper. Files in this folder contain the main code for webscraping. Some of the program logic are abstracted into helper functions in `helpers/helpers.py`. These helpers usually handle the logic behind cleaning the data and to structure them as lists/dict.
 - `scripts/helpers`: helper functions
 
 ## Files
