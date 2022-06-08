@@ -178,7 +178,7 @@ Email: muhdraihan1140@gmail.com
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [readMe template Github repo](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+* Template from [readMe template Github repo](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
