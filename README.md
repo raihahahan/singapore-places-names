@@ -148,9 +148,11 @@ The CLI will show instructions on how to use the program.
 <!-- CONTRIBUTING -->
 ## Contributing
 
+**Note:** At the time of writing, the documentation is still not ready to be viewed. So contributions will not be accepted yet.
+
 Contributions are **greatly appreciated**. Please read the [documentation](https://github.com/raihahahan/singapore-places-names/blob/main/documentation.md) first before starting. See the [open issues](https://github.com/raihahahan/singapore-places-names/issues) for a list of proposed features and/or known issues.
 
-**Note:** At the time of writing, the documentation is still not ready to be viewed. So contributions will not be accepted yet.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -164,20 +166,17 @@ Contributions are **greatly appreciated**. Please read the [documentation](https
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
-<!-- ## Contact
+## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - muhdraihan1140@gmail.com
+Email: muhdraihan1140@gmail.com
 
-Project Link: [https://github.com/raihahahan/singapore-places-names](https://github.com/raihahahan/singapore-places-names)
- -->
+<!-- Project Link: [https://github.com/raihahahan/singapore-places-names](https://github.com/raihahahan/singapore-places-names) -->
 
 
 <!-- ACKNOWLEDGEMENTS -->
-<!-- ## Acknowledgements
+## Acknowledgements
 
-* []()
-* []()
-* []() -->
+* [readMe template Github repo](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
