@@ -89,7 +89,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-This project generates a list of key places in Singapore in different data structures - `list` and `dict`. You may either view the preset ouput files [here](https://github.com/raihahahan/singapore-places-names/tree/main/output) or clone this repo to use the command line program. The command line program allows you to choose your desired region (East, West, North, North East, Central) and Planning Area (i.e. places covered under Bedok, Bishan, Tampines etc.). 
+This project generates a list of key places in Singapore in different data structures - `list` and `dict`. You may either view the preset output files [here](https://github.com/raihahahan/singapore-places-names/tree/main/output) or clone this repo to use the command line program. The command line program allows you to choose your desired region (East, West, North, North East, Central) and Planning Area (i.e. places covered under Bedok, Bishan, Tampines etc.). 
 
 This is useful if you are writing a program which requires a list of key places in Singapore.
 
