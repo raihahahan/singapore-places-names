@@ -1,5 +1,3 @@
-import sys
-sys.path.append("..") # Adds higher directory to python modules path.
 import string
 from bs4 import BeautifulSoup
 from helpers.helpers import removeBracket, cleanList

@@ -1,7 +1,5 @@
 import string
 from bs4 import BeautifulSoup, ResultSet
-import sys
-sys.path.append("..") 
 from .scrapeList import get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
 from helpers.helpers import cleanList, removeBracket
 from helpers.constants import regionID
