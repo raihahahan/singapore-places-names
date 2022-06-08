@@ -2,7 +2,7 @@ import string
 from bs4 import BeautifulSoup
 
 from scrapers.scrapeList import getAllList, get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
-from scrapers.scrapeDict import getDictByPlanningArea_ALL, getDictByPlanningArea_central, getDictByRegion, getDictByRegion_east, getDictByRegion_north, getDictByRegion_northEast, getDictByRegion_west
+from scrapers.scrapeDict import getDictByPlanningArea_ALL, getDictByPlanningArea_central, getDictByRegion, getDictByPlanningArea_east, getDictByPlanningArea_north, getDictByPlanningArea_northEast, getDictByPlanningArea_west
 from helpers.constants import inputStr
 
 def convertNumToList(num:string, maxNum: int):
@@ -15,6 +15,7 @@ def convertNumToList(num:string, maxNum: int):
     return listNum
 
 input_1 = {
+    # to get data as list
     "0": getAllList,
     "1": get_east_list,
     "2": get_north_list,
@@ -24,6 +25,7 @@ input_1 = {
 }
 
 input_2 = {
+    # to get data by region
     "0": getDictByRegion,
     "1": get_east_list,
     "2": get_north_list,
@@ -33,12 +35,13 @@ input_2 = {
 }
 
 input_4 = {
+    # to get data by planning area
     "0": getDictByPlanningArea_ALL,
-    "1": getDictByRegion_east,
-    "2": getDictByRegion_north,
-    "3": getDictByRegion_northEast,
+    "1": getDictByPlanningArea_east,
+    "2": getDictByPlanningArea_north,
+    "3": getDictByPlanningArea_northEast,
     "4": getDictByPlanningArea_central,
-    "5": getDictByRegion_west
+    "5": getDictByPlanningArea_west
 }
 
 input_3 = ["all", "east", "north", "northEast", "central", "west"]

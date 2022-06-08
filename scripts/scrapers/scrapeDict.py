@@ -81,25 +81,25 @@ def getDictByRegion_others(soup: BeautifulSoup, id: string):
     else:
         return []
 
-def getDictByRegion_east(soup: BeautifulSoup):
+def getDictByPlanningArea_east(soup: BeautifulSoup):
     return getDictByRegion_others(soup, regionID["east"])
 
-def getDictByRegion_north(soup: BeautifulSoup):
+def getDictByPlanningArea_north(soup: BeautifulSoup):
     return getDictByRegion_others(soup, regionID["north"])
 
-def getDictByRegion_northEast(soup: BeautifulSoup):
+def getDictByPlanningArea_northEast(soup: BeautifulSoup):
     return getDictByRegion_others(soup, regionID["northEast"])
 
-def getDictByRegion_west(soup: BeautifulSoup):
+def getDictByPlanningArea_west(soup: BeautifulSoup):
     return getDictByRegion_others(soup, regionID["west"])
 
 
 def getDictByPlanningArea_ALL(soup: BeautifulSoup):
     central = getDictByPlanningArea_central(soup)
-    east = getDictByRegion_east(soup)
-    north = getDictByRegion_north(soup)
-    northEast = getDictByRegion_northEast(soup)
-    west = getDictByRegion_west(soup)
+    east = getDictByPlanningArea_east(soup)
+    north = getDictByPlanningArea_north(soup)
+    northEast = getDictByPlanningArea_northEast(soup)
+    west = getDictByPlanningArea_west(soup)
 
     return {
         "east": east,
