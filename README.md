@@ -85,13 +85,17 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 This project generates a list of key places in Singapore in different data structures - `list` and `dict`. You may either view the preset output files [here](https://github.com/raihahahan/singapore-places-names/tree/main/output) or clone this repo to use the command line program. The command line program allows you to choose your desired region (East, West, North, North East, Central) and Planning Area (i.e. places covered under Bedok, Bishan, Tampines etc.). 
 
-This is useful if you are writing a program which requires a list of key places in Singapore.
+### When is this useful?
+
+- This is useful if you are writing a program which requires a list of key places in Singapore in string format only. Examples:
+> 1. Dropdown autocomplete suggestions for a search bar component
+> 2. Querying a list of places based on region (east, west etc.) and/or planning area (Bedok, Yishun etc.)
+- This program only shows the list of names in string format for each item. If you need a much more detailed set of data for your use case (e.g. with coordinates, geocoding), please see Singapore's (oneMap API)[https://www.onemap.gov.sg/docs/] instead.
 
 ### How it works
 Webscraper Python scripts built using the [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) Python library pull data from https://en.wikipedia.org/wiki/List_of_places_in_Singapore#cite_note-8 in HTML format. The program then cleans up and converts this data into the chosen data structures (`list`, `dictByRegion`, `dictByRegionAndPlanning`).
