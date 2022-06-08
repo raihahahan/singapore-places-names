@@ -30,14 +30,14 @@ sg-places-list/
 ## Files
 - `main.py`: The file that will be run in the command line. No changes required in this file as everything is abstracted into the `cli(soup: BeautifulSoup)` function.
 - `cli/cli.py`: Contains the interface for the command line. Modify this file only if there are any changes to the flow of the CLI program. Else, other CLI logic are abstracted into helper functions found in `helpers/cliHelpers`. Constants such as printed texts are found in `helpers/constants.py`
-- `scrapers/mainWikiScrape.py`: The script to fetch data from the Wikipedia site and return a BeautifulSoup object (i.e `return BeautifulSoup(response.text, "html.parser")`) 
+- `scrapers/mainWikiScrape.py`: The script to fetch data from the Wikipedia site. The `getWikiData()` function in this script returns a BeautifulSoup object (i.e `return BeautifulSoup(response.text, "html.parser")`) 
 - `scrapers/scrapeDict.py`: Converts the BeautifulSoup object into a dict structure.
 - `scrapers/scrapeList.py`: Converts the BeautifulSoup object into a list structure.
 - `helpers/`: Folder containing all the helper functions.
 
 ## How the program works
 - `getWikiData()` in `scrapers/mainWikiScrape.py` returns a BeautifulSoup object. This is the only script which fetches data from the Wikipedia site.
-- Functions in `scrapeDict.py` and `scrapeList.py` take in the BeautifulSoup object as an argument and returns the data in the desired data structure. These conversions are aided with helpers from `helpers/`.
+- Functions in `scrapeDict.py` and `scrapeList.py` take in the BeautifulSoup object as an argument and return the data in the desired data structure. These conversions are aided with helpers from `helpers/`.
 - `cli.py` controls the user interface of the command line program. It contains the `cli` function which takes in the BeautifulSoup object as an argument and pass this down to the respective functions created in `scrapers/`.
 - `main.py` calls `soup=getWikiData()` and passes `soup` as an argument to `cli(soup)`. This ensures that `getWikiData()` is only called once.
 
