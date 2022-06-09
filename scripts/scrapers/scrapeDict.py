@@ -57,7 +57,7 @@ def getDictByPlanningArea_central(soup:BeautifulSoup):
     else:
         return {}
 
-def getDictByRegion_others(soup: BeautifulSoup, id: string):
+def getDictByPlanningArea_others(soup: BeautifulSoup, id: string):
     finalResults = {}
     
     def get_list():
@@ -82,16 +82,16 @@ def getDictByRegion_others(soup: BeautifulSoup, id: string):
         return []
 
 def getDictByPlanningArea_east(soup: BeautifulSoup):
-    return getDictByRegion_others(soup, regionID["east"])
+    return getDictByPlanningArea_others(soup, regionID["east"])
 
 def getDictByPlanningArea_north(soup: BeautifulSoup):
-    return getDictByRegion_others(soup, regionID["north"])
+    return getDictByPlanningArea_others(soup, regionID["north"])
 
 def getDictByPlanningArea_northEast(soup: BeautifulSoup):
-    return getDictByRegion_others(soup, regionID["northEast"])
+    return getDictByPlanningArea_others(soup, regionID["northEast"])
 
 def getDictByPlanningArea_west(soup: BeautifulSoup):
-    return getDictByRegion_others(soup, regionID["west"])
+    return getDictByPlanningArea_others(soup, regionID["west"])
 
 
 def getDictByPlanningArea_ALL(soup: BeautifulSoup):
