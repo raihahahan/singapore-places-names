@@ -90,6 +90,52 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 This project generates a list of key places in Singapore in different data structures - `list` and `dict`. You may either view the preset output files [here](https://github.com/raihahahan/singapore-places-names/tree/main/output) or clone this repo to use the command line program. The command line program allows you to choose your desired region (East, West, North, North East, Central) and Planning Area (i.e. places covered under Bedok, Bishan, Tampines etc.). 
 
+### Demo
+
+```
+/path/to/directory/sg-places-list> python scripts/main.py
+
+Type a command to choose a data structure. Invalid commands will be skipped:
+0: list
+1: dict
+
+b: Go back to start
+i: Show instructions again
+q: Quit
+
+1
+
+Choose the type of data you want:
+0: By region only (e.g. east, west, north etc.)
+1: By region and planning area (e.g. { east: { Bedok: [...] } })
+
+b: Go back to start
+i: Show instructions again
+q: Quit
+
+1
+
+Choose the region you want:
+0: All
+1: East
+2: North
+3: North East
+4: Central
+5: West
+
+b: Go back to start
+i: Show instructions again
+q: Quit
+You may combine them by listing (e.g. 1324 OR 35). If 0 is included, result will just return all items. Duplicates will be removed.
+
+1
+
+{'east': {'Bedok': ['Bayshore', 'Bedok North', 'Bedok Reservoir', 'Bedok South', 'Frankel', 'Kaki Bukit', 'Kembangan', 'Siglap'], 'Changi': ['Changi Airport', 'Changi Point', 'Changi West'], 'Changi Bay': [], 'Pasir Ris': ['Flora Drive', 'Loyang East', 'Loyang West', 'Pasir Ris Central (Formerly called "Town" subzone.)', 'Pasir Ris Drive', 'Pasir Ris Park', 'Pasir Ris Wafer Fab Park (Formerly called "Pasir Ris West" subzone.)', 'Pasir Ris West (Formerly called "Elias" subzone.)'], 'Paya Lebar': ['Airport Road', 'Paya Lebar East', 'Paya Lebar North', 'Paya Lebar West', 'PLAB'], 'Tampines': ['Simei', 'Tampines East', 'Tampines North', 'Tampines West', 'Xilin']}}
+
+q
+
+```
+
 ### When is this useful?
 
 - This is useful if you are writing a program which requires a list of key places in Singapore in string format only. Examples:
@@ -178,7 +224,8 @@ Email: muhdraihan1140@gmail.com
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [readMe template Github repo](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+* Template from [readMe template Github repo](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+* Data scraped from https://en.wikipedia.org/wiki/List_of_places_in_Singapore#cite_note-8
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
