@@ -141,7 +141,8 @@ q
 - This is useful if you are writing a program which requires a list of key places in Singapore in string format only. Examples:
 > 1. Dropdown autocomplete suggestions for a search bar component
 > 2. Querying a list of places based on region (east, west etc.) and/or planning area (Bedok, Yishun etc.)
-- This program only shows the list of names in string format for each item (i.e. this is a quick and dirty way to easily get a list of key places in SG). If you need a much more detailed set of data for your use case (e.g. with coordinates, geocoding), please see Singapore's [oneMap API](https://www.onemap.gov.sg/docs/) instead.
+- You may use `scripts/tests.py` to play around with the provided functions. You may modify the data structures by mapping them or you may even export it as CSV, Excel, etc.
+- This program only fetches the list of names in string format for each item (i.e. this is a quick and dirty way to easily get a list of key places in SG). If you need a much more detailed set of data for your use case (e.g. with coordinates, geocoding), please see Singapore's [oneMap API](https://www.onemap.gov.sg/docs/) instead.
 
 ### How it works
 Webscraper Python scripts built using the [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) Python library pull data from https://en.wikipedia.org/wiki/List_of_places_in_Singapore#cite_note-8 in HTML format. The program then cleans up and converts this data into the chosen data structures (`list`, `dictByRegion`, `dictByRegionAndPlanning`).
