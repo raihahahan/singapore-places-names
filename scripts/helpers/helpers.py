@@ -11,3 +11,24 @@ def removeBracket(text: string):
 
 def cleanList(list: list):
     return filter(lambda i: i.strip() != "" and i != "]", list)
+
+def cleanItem(item: string):
+    if "(Formerly" in item:
+        indexToRemove_0 = item.index("(Formerly")
+        return item[0:indexToRemove_0-1]
+
+    elif "(Also" in item:
+        indexToRemove_1 = item.index("(Also")
+        return item[0:indexToRemove_1-1]
+
+    elif "(Not" in item:
+        indexToRemove_2 = item.index("(Not")
+        return item[0:indexToRemove_2-1]
+        
+    elif "[" in item:
+        indexToRemove = item.index("[")
+        return item[0:indexToRemove]
+        
+    else:
+        return item
+

@@ -1,5 +1,3 @@
-```
-Last updates: 14 June 2022 8:27PM SGT
 const data = {
   east: {
     Bedok: [
@@ -378,5 +376,3 @@ const data = {
     ],
   },
 };
-
-```

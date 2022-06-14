@@ -1,7 +1,7 @@
 import string
 from bs4 import BeautifulSoup, ResultSet
 from .scrapeList import get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
-from helpers.helpers import cleanList, removeBracket
+from helpers.helpers import cleanList, removeBracket, cleanItem
 from helpers.constants import regionID
 
 def getDictByRegion(soup: BeautifulSoup):
@@ -44,7 +44,7 @@ def getDictByPlanningArea_central(soup:BeautifulSoup):
         for obj in sizeList:
             currSize=sizeList[i]["size"]
             for j in range(tmpItemListIndex, currSize + tmpItemListIndex):
-                centralResults[sizeList[i]["name"]].append(tmpItemList[j])
+                centralResults[sizeList[i]["name"]].append(cleanItem(tmpItemList[j]))
             tmpItemListIndex += currSize
             i += 1
         return centralResults
@@ -69,8 +69,11 @@ def getDictByPlanningArea_others(soup: BeautifulSoup, id: string):
                     text=item.text
                     if text.strip() != "":
                         textList = removeBracket(text)
-                        firstItem = textList.pop(0)
-                        otherItems = list(cleanList(textList))
+                        cleanerList=[]
+                        for txt in textList:
+                            cleanerList.append(cleanItem(txt))
+                        firstItem = cleanerList.pop(0)
+                        otherItems = list(cleanList(cleanerList))
                         results[firstItem] = otherItems 
                 break
         return results

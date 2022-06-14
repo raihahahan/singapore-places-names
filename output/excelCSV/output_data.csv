@@ -1,0 +1,320 @@
+id,title
+0,Bishan
+1,Bishan East
+2,Marymount
+3,Upper Thomson
+4,Bukit Merah
+5,Alexandra Hill
+6,Alexandra North
+7,Bukit Ho Swee
+8,Bukit Merah
+9,Depot Road
+10,Everton Park
+11,Henderson Hill
+12,Kampong Tiong Bahru
+13,Maritime Square
+14,HarbourFront
+15,Singapore General Hospital
+16,Telok Blangah
+17,Telok Blangah
+18,Telok Blangah
+19,Tiong Bahru
+20,Tiong Bahru
+21,Bukit Timah
+22,Holland Road
+23,Downtown Core
+24,Anson
+25,Bayfront Subzone
+26,Bugis
+27,City Hall
+28,Clifford Pier
+29,Marina Centre
+30,Raffles Place
+31,Tanjong Pagar
+32,Geylang
+33,Aljunied
+34,Geylang East
+35,Kampong Ubi
+36,MacPherson
+37,Kallang
+38,Bendemeer
+39,Boon Keng
+40,Crawford
+41,Geylang Bahru
+42,Kallang Bahru
+43,Kampong Bugis
+44,Kampong Java
+45,Lavender
+46,Tanjong Rhu
+47,Marina East
+48,Marina East
+49,Marina South
+50,Marina South
+51,Marine Parade
+52,East Coast
+53,Katong
+54,Mountbatten
+55,Museum
+56,Bras Basah
+57,Dhoby Ghaut
+58,Fort Canning
+59,Newton
+60,Goodwood Park
+61,Istana Negara
+62,Novena
+63,Balestier
+64,Orchard
+65,Outram
+66,Chinatown
+67,Pearl's Hill
+68,Queenstown
+69,Commonwealth
+70,Dover
+71,Ghim Moh
+72,Holland Drive
+73,Kent Ridge
+74,National University of Singapore
+75,one-north
+76,Pasir Panjang
+77,Pasir Panjang
+78,Port
+79,Singapore Polytechnic
+80,River Valley
+81,Rochor
+82,Bencoolen
+83,Farrer Park
+84,Kampong Glam
+85,Little India
+86,Mount Emily
+87,Rochor Canal
+88,Sungei Road
+89,Victoria
+90,Singapore River
+91,Boat Quay
+92,Clarke Quay
+93,Robertson Quay
+94,Southern Islands
+95,Sentosa
+96,Straits View
+97,Straits View
+98,Tanglin
+99,Tyersall
+100,Toa Payoh
+101,Bidadari
+102,Joo Seng
+103,Potong Pasir
+104,Bedok
+105,Bayshore
+106,Bedok North
+107,Bedok Reservoir
+108,Bedok South
+109,Frankel
+110,Kaki Bukit
+111,Kembangan
+112,Siglap
+113,Changi
+114,Changi Airport
+115,Changi Point
+116,Changi West
+117,Changi Bay
+118,Pasir Ris
+119,Flora Drive
+120,Loyang East
+121,Loyang West
+122,"Pasir Ris Central (Formerly called ""Town"" subzone.)"
+123,Pasir Ris Drive
+124,Pasir Ris Park
+125,"Pasir Ris Wafer Fab Park (Formerly called ""Pasir Ris West"" subzone.)"
+126,"Pasir Ris West (Formerly called ""Elias"" subzone.)"
+127,Paya Lebar
+128,Airport Road
+129,Paya Lebar East
+130,Paya Lebar North
+131,Paya Lebar West
+132,PLAB
+133,Tampines
+134,Simei
+135,Tampines East
+136,Tampines North
+137,Tampines West
+138,Xilin
+139,Central Water Catchment
+140,Lim Chu Kang
+141,Mandai
+142,Mandai East
+143,Mandai Estate
+144,Mandai West
+145,Sembawang
+146,Admiralty
+147,Sembawang Central
+148,Sembawang East
+149,Sembawang North
+150,Sembawang Spring
+151,Sembawang Straits
+152,Senoko North
+153,Senoko South
+154,The Wharves
+155,Simpang
+156,Pulau Seletar
+157,Simpang North
+158,Simpang South
+159,Tanjong Irau
+160,Sungei Kadut
+161,"Gali Batu (Formerly called ""Mandai"" subzone.)"
+162,Kranji
+163,Pang Sua
+164,Reservoir View
+165,Turf Club
+166,Woodlands
+167,Greenwood Park
+168,Midview
+169,North Coast
+170,Senoko West
+171,Woodgrove
+172,Woodlands East
+173,Woodlands Regional Centre
+174,Woodlands South
+175,Woodlands West
+176,Yishun
+177,Khatib
+178,Lower Seletar
+179,Nee Soon
+180,Northland
+181,Springleaf
+182,Yishun Central
+183,Yishun East
+184,Yishun South
+185,Yishun West
+186,Ang Mo Kio
+187,Ang Mo Kio Town Centre
+188,Cheng San
+189,Chong Boon
+190,"Kebun Baru (Also spelled as ""Kebun Bahru"".)"
+191,Sembawang Hills
+192,Shangri-La
+193,"Tagore (Formerly called ""Sindo"" subzone.)"
+194,Townsville
+195,Yio Chu Kang
+196,Yio Chu Kang East
+197,"Yio Chu Kang North (Formerly called ""Seletar"" subzone.)"
+198,Yio Chu Kang West
+199,Hougang
+200,Defu Industrial Park
+201,Hougang Central
+202,Hougang East
+203,Hougang West
+204,Kangkar
+205,"Kovan (Formerly called ""Rosyth"" subzone.)"
+206,Lorong Ah Soo
+207,"Lorong Halus (Formerly called ""Sungei Serangoon"" subzone.)"
+208,"Tai Seng (Formerly called ""Tai Keng"" subzone.)"
+209,Trafalgar
+210,North-Eastern Islands
+211,Punggol
+212,Coney Island
+213,Matilda
+214,Northshore
+215,Punggol Canal
+216,Punggol Field
+217,Punggol Town Centre
+218,Waterway East
+219,Seletar
+220,Pulau Punggol Barat
+221,Pulau Punggol Timor
+222,Seletar (Not to be confused with Seletar planning area.)
+223,Seletar Aerospace Park
+224,Sengkang
+225,"Anchorvale (Formerly called ""Buangkok"" subzone.)"
+226,"Compassvale (Formerly called ""Trafalgar"" subzone.)"
+227,"Fernvale (Formerly called ""Jalan Kayu East"" subzone.)"
+228,"Lorong Halus North (Formerly called ""Sungei Serangoon East"" subzone.)"
+229,"Rivervale (Formerly called ""Sungei Serangoon West"" subzone.)"
+230,Sengkang Town Centre
+231,"Sengkang West (Formerly called ""Jalan Kayu West"" subzone.)"
+232,Serangoon
+233,Lorong Chuan
+234,Seletar Hills
+235,Serangoon Central
+236,Serangoon Garden
+237,Serangoon North
+238,Serangoon North Industrial Estate
+239,Upper Paya Lebar
+240,Boon Lay
+241,Liu Fang
+242,Samulun
+243,Shipyard
+244,Tukang
+245,Bukit Batok
+246,Brickworks
+247,Bukit Batok Central
+248,Bukit Batok East
+249,Bukit Batok West
+250,Gombak
+251,Guilin
+252,Hillview
+253,Hong Kah North
+254,Bukit Panjang
+255,Bangkit
+256,Dairy Farm
+257,Fajar
+258,Jelebu
+259,Nature Reserve
+260,Saujana
+261,Senja
+262,Choa Chu Kang
+263,Choa Chu Kang Central
+264,"Choa Chu Kang North (Formerly called ""Kranji North"" subzone and ""Pang Sua"" subzone.)"
+265,Keat Hong
+266,Peng Siang
+267,Teck Whye
+268,Yew Tee
+269,Clementi
+270,Clementi Central
+271,Clementi North
+272,Clementi West
+273,Clementi Woods
+274,Faber
+275,Pandan
+276,Sunset Way
+277,Toh Tuck
+278,West Coast
+279,Jurong East
+280,International Business Park
+281,"Jurong Gateway (Formerly called ""Regional Centre"" subzone.)"
+282,Jurong Port
+283,Jurong River
+284,Lakeside
+285,Penjuru Crescent
+286,Teban Gardens
+287,Toh Guan
+288,Yuhua East
+289,"Yuhua West (Formerly called ""Boon Lay"" subzone.)"
+290,Jurong West
+291,Boon Lay Place
+292,Chin Bee
+293,Hong Kah
+294,Jurong West Central
+295,Kian Teck
+296,Safti
+297,Taman Jurong
+298,Wenya
+299,Yunnan
+300,Pioneer
+301,Benoi Sector
+302,Gul Basin
+303,Gul Circle
+304,Joo Koon
+305,Pioneer Sector
+306,Tengah
+307,Tuas
+308,Tengeh
+309,Tuas Bay
+310,"Tuas North (Formerly called ""Pioneer"" subzone.)"
+311,Tuas Promenade
+312,Tuas View
+313,"Tuas View Extension (Formerly called ""Coast"" subzone.)"
+314,Western Islands
+315,Jurong Island and Bukom
+316,Semakau
+317,Sudong
+318,Western Water Catchment
