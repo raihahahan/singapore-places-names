@@ -3,6 +3,7 @@ regionID = {
     "north": "North_Region",
     "northEast": "North-East_Region",
     "west": "West_Region",
+    "central": "Central_Region"
 }
 
 inputStr = [

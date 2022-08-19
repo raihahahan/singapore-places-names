@@ -13,59 +13,39 @@ def getAllList(soup: BeautifulSoup):
     result = central + east + north + northEast + west
     return result
 
-def get_central_list(soup):
+def get_list(soup: BeautifulSoup, id: string, ):
     finalResults = []
-    
-    def get_central():
-        centralResults = []
-        central_table = soup.find("table", {"class": "wikitable"})
-        a = central_table.find_all("a")
-        for tag in a:         
-            if "title" in tag.attrs:
-                centralResults.append(tag.text)
-        return centralResults
+    def get_list_helper():
+        listResults = []
+        table_header = soup.find("span", { "class": "mw-headline", "id": id})
+        for sibling in table_header.parent.next_siblings:
+            if sibling.name == "table":
+                list_table = sibling
+                a = list_table.find_all("a")
+                for tag in a:         
+                    if "title" in tag.attrs:
+                        listResults.append(tag.text)
+                return listResults
 
     if soup:
-        central = get_central()
-        finalResults += central
+        list = get_list_helper()
+        finalResults += list
 
         return finalResults
     else:
         return []
-
-def getFromList(id: string, soup: BeautifulSoup):
-    finalResults = []
     
-    def get_list():
-        results = []
-        listArr = soup.find("span", {"class": "mw-headline", "id": id})
-        for sibling in listArr.parent.next_siblings:
-            if sibling.name == "ul":
-                for item in sibling: 
-                    text=item.text
-                    if text.strip() != "":
-                        textList = removeBracket(text)
-                        results += textList
-                break
-        results = cleanList(results)
-
-        return results
-
-    if soup:
-        res = get_list()
-        finalResults += res
-        return finalResults
-    else:
-        return []
-
 def get_east_list(soup: BeautifulSoup):
-    return getFromList(regionID["east"], soup)
+    return get_list(soup, regionID["east"])
 
 def get_north_list(soup: BeautifulSoup):
-    return getFromList(regionID["north"], soup)
+    return get_list(soup, regionID["north"])
 
 def get_northEast_list(soup: BeautifulSoup):
-    return getFromList(regionID["northEast"], soup)
+    return get_list(soup, regionID["northEast"])
 
 def get_west_list(soup: BeautifulSoup):
-    return getFromList(regionID["west"], soup)
+    return get_list(soup, regionID["west"])
+
+def get_central_list(soup: BeautifulSoup):
+    return get_list(soup, regionID["central"])
