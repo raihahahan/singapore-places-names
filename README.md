@@ -226,7 +226,7 @@ Email: muhdraihan1140@gmail.com
 ## Acknowledgements
 
 * Template from [readMe template Github repo](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
-* Data scraped from https://en.wikipedia.org/wiki/List_of_places_in_Singapore#cite_note-8
+* Data scraped from https://en.wikipedia.org/wiki/List_of_places_in_Singapore
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
