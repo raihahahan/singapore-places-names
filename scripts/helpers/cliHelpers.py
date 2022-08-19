@@ -12,7 +12,7 @@ def convertNumToList(num:string, maxNum: int):
     for item in listNum:
         if (not item.isnumeric()) or int(item) > maxNum:
             return []
-    return listNum
+    return list(set(listNum))
 
 input_1 = {
     # to get data as list
