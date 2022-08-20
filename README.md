@@ -145,7 +145,7 @@ q
 - This program only fetches the list of names in string format for each item (i.e. this is a quick and dirty way to easily get a list of key places in SG). If you need a much more detailed set of data for your use case (e.g. with coordinates, geocoding), please see Singapore's [oneMap API](https://www.onemap.gov.sg/docs/) instead.
 
 ### How it works
-Webscraper Python scripts built using the [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) Python library pull data from https://en.wikipedia.org/wiki/List_of_places_in_Singapore#cite_note-8 in HTML format. The program then cleans up and converts this data into the chosen data structures (`list`, `dictByRegion`, `dictByRegionAndPlanning`).
+Webscraper Python scripts built using the [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) Python library pull data from https://en.wikipedia.org/wiki/List_of_places_in_Singapore in HTML format. The program then cleans up and converts this data into the chosen data structures (`list`, `dictByRegion`, `dictByRegionAndPlanning`).
 
 **Important:** The Wikipedia page may be updated which may cause the web-scraping scripts to not work properly. [wikiChanges.txt](https://github.com/raihahahan/singapore-places-names/blob/main/wikiChanges.txt) shows the latest time when the page was updated. A WikiPedia page listener will be created soon (see [roadmap](#roadmap)) to listen to changes to the page and update wikiChanges.txt accordingly.
 
@@ -217,7 +217,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Email: muhdraihan1140@gmail.com
+Email: mraihandev@gmail.com
 
 <!-- Project Link: [https://github.com/raihahahan/singapore-places-names](https://github.com/raihahahan/singapore-places-names) -->
 
