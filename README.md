@@ -92,7 +92,10 @@
 This project generates a list of key places in Singapore in different data structures - `list` and `dict`. You may either view the preset output files [here](https://github.com/raihahahan/singapore-places-names/tree/main/output) or clone this repo to use the command line program. The command line program allows you to choose your desired region (East, West, North, North East, Central) and Planning Area (i.e. places covered under Bedok, Bishan, Tampines etc.).
 
 ### Wikipedia listener (automatically push to Github)
-A separate Python script (changes.py) has been created to detect for changes to the wikipedia page. When running the script, if there are any changes (i.e. wikipedia page last updated value is different from what we have in wikiChanges.txt), then the script will update the local wikiChanges.txt and push the updates to the associated Github repo stated in the .env config.
+`changes.py` is a Python script that helps to detect changes to the Wikipedia page. The `wikiChanges.txt` file in `git-helper-bot-update` branch is the most updated version of the last Wikipedia page edit data. When running the script, if there are any changes (i.e. Wikipedia page last updated value is different from what we have in `wikiChanges.txt`), then the script will update the local `wikiChanges.txt` and push the updates to `git-helper-bot-update`.
+
+### Wikipedia listener with Crontab
+You can also schedule `changes.py` to run at regular intervals with cron, which is how the branch `git-helper-bot-update` works. It uses `github.com/git-helper-bot` to push updates to the `git-helper-bot-update` branch. Read more about it [here](https://www.geeksforgeeks.org/scheduling-python-scripts-on-linux/).
 
 ### Demo
 
@@ -143,11 +146,12 @@ $ q
 #### changes.py
 ```sh
 $ python3 scripts/scrapers/changes.py
-A change is found:
 
-Previous update: This page was last edited on 17 January 2022, at 12:43 (UTC).
+08/30/2022, 16:09:02: A change is found:
+Previous update: This page was last edited on 12 July 2022, at 12:13 (UTC).
 Most recent update: This page was last edited on 29 July 2022, at 08:15 (UTC).
 Text file updated successfully.
+Successfully updated github repo at 08/30/2022, 16:09:05
 
 $ python3 scripts/scrapers/changes.py
 No changes detected.
@@ -164,8 +168,6 @@ No changes detected.
 
 ### How it works
 Webscraper Python scripts built using the [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) Python library pull data from https://en.wikipedia.org/wiki/List_of_places_in_Singapore in HTML format. The program then cleans up and converts this data into the chosen data structures (`list`, `dictByRegion`, `dictByRegionAndPlanning`).
-
-**Important:** The Wikipedia page may be updated which may cause the web-scraping scripts to not work properly. [wikiChanges.txt](https://github.com/raihahahan/singapore-places-names/blob/main/wikiChanges.txt) shows the latest time when the page was updated. A WikiPedia page listener script `changes.py` is created to detect any changes to the page. If found, then it updates the text file and pushes the changes to the repository stated in the .env config (see Installation below).
 
 ### Built With
 
@@ -193,11 +195,16 @@ To get a local copy up and running follow these simple steps.
    ```sh
    python3 scripts/main.py
    ```
-4. To work with `changes.py`, add a `.env` file to the root of the project. Add in the following data:
+4. To work with `changes.py`, you will need to upload this clone into a Github repository, or create a fork instead. Make sure that `git-helper-bot-update` branch exists. Add a `.env` file to the root of the project and add in the following data:
    ```
-   githubPK=YOUR_GITHUB_ACCESS_TOKEN
-   user=YOUR_GITHUB_USERNAME
-   fileLocation=YOUR_WIKICHANGES_FILE_LOCATION  # From the root of this project, use `pwd` in the command line. Then append /wikiChanges.txt.
+   githubPK=YOUR_GITHUB_ACCESS_TOKEN ## This is the Github account that will push to git-helper-bot-update branch. It can be a bot account.
+   user=YOUR_GITHUB_USERNAME ## This is the Github account that will push to git-helper-bot-update branch. It can be a bot account.
+   repoUser=YOUR_GITHUB_USERNAME ## This is the Github account that owns the cloned/forked repository.
+   fileLocation=ABSOLUTE_PATH_TO_wikiChanges.txt
+   ```
+5. (optional) To schedule `changes.py` with Crontab, change the following in `changes.py`:
+   ```py
+   dotEnvLocation = ".env" ## CHANGE THIS TO ABSOLUTE PATH IF USING CRONTAB
    ```
 
 <!-- USAGE EXAMPLES -->
@@ -212,7 +219,6 @@ The CLI will show instructions on how to use the program.
     i: Show instructions again
     q: Quit
    ```
-
 
 <!-- ROADMAP -->
 ## Roadmap
