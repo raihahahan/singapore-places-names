@@ -1,6 +1,4 @@
-import string
-
-def removeBracket(text: string):
+def removeBracket(text: str):
     planningArea=text
     indexBracket = planningArea.find("[")
     endOfPlanningArea = planningArea.find("\n")
@@ -12,7 +10,7 @@ def removeBracket(text: string):
 def cleanList(list: list):
     return filter(lambda i: i.strip() != "" and i != "]", list)
 
-def cleanItem(item: string):
+def cleanItem(item: str):
     if "(Formerly" in item:
         indexToRemove_0 = item.index("(Formerly")
         return item[0:indexToRemove_0-1]

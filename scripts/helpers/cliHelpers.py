@@ -1,11 +1,10 @@
-import string
 from bs4 import BeautifulSoup
 
 from scrapers.scrapeList import getAllList, get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
 from scrapers.scrapeDict import getDictByPlanningArea_ALL, getDictByPlanningArea_central, getDictByRegion, getDictByPlanningArea_east, getDictByPlanningArea_north, getDictByPlanningArea_northEast, getDictByPlanningArea_west
 from helpers.constants import inputStr
 
-def convertNumToList(num:string, maxNum: int):
+def convertNumToList(num:str, maxNum: int):
     if "0" in num: 
         return ["0"]
     listNum = list(num)

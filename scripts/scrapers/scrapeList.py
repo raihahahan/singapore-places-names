@@ -1,4 +1,3 @@
-import string
 from bs4 import BeautifulSoup
 from helpers.helpers import removeBracket, cleanList
 from helpers.constants import regionID
@@ -13,7 +12,7 @@ def getAllList(soup: BeautifulSoup):
     result = central + east + north + northEast + west
     return result
 
-def get_list(soup: BeautifulSoup, id: string, ):
+def get_list(soup: BeautifulSoup, id: str):
     finalResults = []
     def get_list_helper():
         listResults = []

@@ -1,4 +1,3 @@
-import string
 from bs4 import BeautifulSoup, ResultSet
 from .scrapeList import get_central_list, get_east_list, get_north_list, get_northEast_list, get_west_list
 from helpers.helpers import cleanList, removeBracket, cleanItem
@@ -19,45 +18,7 @@ def getDictByRegion(soup: BeautifulSoup):
         "northEast": northEast
     }
 
-# def getDictByPlanningArea_central(soup:BeautifulSoup):
-#     finalResults = {}
-    
-#     def get_central():
-#         centralResults = {}
-#         sizeList=[]
-#         tmpItemList=[]
-#         central_table = soup.find("table", {"class": "wikitable"})
-#         a: ResultSet = central_table.find_all("td")
-#         for tag in a:         
-#             if "rowspan" in tag.attrs:
-#                 size = int(tag.attrs["rowspan"])
-#                 item = tag.findChild().text
-#                 sizeList.append({ "name": item, "size": size })
-#                 centralResults[item] = []
-#         i = 0
-#         tmpItemListIndex=0
-#         for tag in a:
-#             if "rowspan" not in tag.attrs:
-#                 if tag.text.strip() != "":
-#                     tmpItemList.append(tag.text[:-1])
-
-#         for obj in sizeList:
-#             currSize=sizeList[i]["size"]
-#             for j in range(tmpItemListIndex, currSize + tmpItemListIndex):
-#                 centralResults[sizeList[i]["name"]].append(cleanItem(tmpItemList[j]))
-#             tmpItemListIndex += currSize
-#             i += 1
-#         return centralResults
-
-#     if soup:
-#         central = get_central()
-#         finalResults = central
-
-#         return finalResults
-#     else:
-#         return {}
-
-def getDictByPlanningArea(soup: BeautifulSoup, id: string):
+def getDictByPlanningArea(soup: BeautifulSoup, id: str):
     finalResults = {}
     def getDict_helper():
         results={}
@@ -95,33 +56,6 @@ def getDictByPlanningArea(soup: BeautifulSoup, id: string):
         return finalResults
     else:
         return {}
-
-# def getDictByPlanningArea_others(soup: BeautifulSoup, id: string):
-#     finalResults = {}
-    
-#     def get_list():
-#         results = {}
-#         listArr = soup.find("span", {"class": "mw-headline", "id": id})
-#         for sibling in listArr.parent.next_siblings:
-#             if sibling.name == "ul":
-#                 for item in sibling: 
-#                     text=item.text
-#                     if text.strip() != "":
-#                         textList = removeBracket(text)
-#                         cleanerList=[]
-#                         for txt in textList:
-#                             cleanerList.append(cleanItem(txt))
-#                         firstItem = cleanerList.pop(0)
-#                         otherItems = list(cleanList(cleanerList))
-#                         results[firstItem] = otherItems 
-#                 break
-#         return results
-
-#     if soup:
-#         finalResults = get_list()
-#         return finalResults
-#     else:
-#         return []
 
 def getDictByPlanningArea_east(soup: BeautifulSoup):
     return getDictByPlanningArea(soup, regionID["east"])
